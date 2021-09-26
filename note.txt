@@ -1,0 +1,10 @@
+
+origin reference :
+
+https://github.com/ZC119/Handwritten-CycleGAN
+
+our code test parameters :
+
+python train.py --cuda --dataroot datasets/f11f12/ --input_nc 1 --output_nc 1  --n_epochs 150 --batchSize 10  --decay_epoch 119
+
+python test.py --dataroot datasets/000-043/ --cuda --input_nc 1 --output_nc 1 --generator_A2B output/139_netG_A2B.pth  --generator_B2A output/139_netG_B2A.pth
