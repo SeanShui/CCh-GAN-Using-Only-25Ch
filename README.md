@@ -18,6 +18,27 @@ compared methods.
 
 We propose a two-stage Chinese font generative system. Stage 1 classify the nearest source style for stage 2 style transfe.
 
+## Stage 1 Usage
+
+Install from [pip](https://pypi.org/project/pytorch-fid/):
+
+```
+pip install pytorch-fid
+```
+
+Requirements:
+- python3
+- pytorch
+- torchvision
+- pillow
+- numpy
+- scipy
+
+To compute the FID score between two styles of font images, where images of each style are contained in an individual folder:
+```
+python -m pytorch_fid path/to/source path/to/target
+```
+
 ## Acknowledgements
 Stage 1 code derived and rehashed from:
 
