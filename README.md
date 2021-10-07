@@ -42,17 +42,18 @@ python -m pytorch_fid path/to/source path/to/target
 ## Stage 2 Usage
 ### 1. Setup the dataset
 
-You can prepare your own dataset by setting up the following directory structure:
+You can prepare your own Chinese font style transfer dataset by setting up the following directory structure:
 
     .
     ├── datasets                   
     |   ├── <dataset_name>         # i.e. brucewayne2batman
     |   |   ├── train              # Training
-    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
-    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    |   |   |   ├── A              # Contains target style font images (i.e. Senty Pea)
+    |   |   |   └── B              # Contains source style font images (i.e. Senty Golden Bell)
+    |   |   |   └── C              # Contains target style font images (i.e. Senty Pea)
     |   |   └── test               # Testing
-    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
-    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    |   |   |   ├── A              # Contains target style font images (i.e. Senty Pea)
+    |   |   |   └── B              # Contains source style font images (i.e. Senty Golden Bell)
     
 ### 2. Train!
 ```
