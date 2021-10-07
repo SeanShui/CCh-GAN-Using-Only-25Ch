@@ -79,6 +79,19 @@ Stage 2 code derived and rehashed from:
 
 * [Generating handwritten Chinese characters using CycleGAN](https://github.com/ZC119/Handwritten-CycleGAN) by [ZC119](https://github.com/ZC119)
 
+## Citing
+
+If you use this repository in your research, consider citing it using the following Bibtex entry:
+
+```
+@misc{gvgip,
+  author = {{Chung-Che Wang, Hsien-Yao Shui, Jyh-Shing Roger Jang}},
+  title = {{Chinese Handwritten Style Transfer Using Only 25 Target Examples}},
+  howpublished = "The 34th IPPR Conference on Computer Vision, Graphics, and Image Processing (CVGIP)",
+  year = 2021,
+}
+```
+
 ## License
 
 Stage 1: Apache 2.0
