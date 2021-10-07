@@ -50,12 +50,12 @@ You can prepare your own Chinese font style transfer dataset by setting up the f
     |   |   ├── train              # Training
     |   |   |   ├── A              # Contains target style font images (i.e. Senty Pea)
     |   |   |   └── B              # Contains source style font images (i.e. Senty Golden Bell)
-    |   |   |   └── C              # Contains target style font images (i.e. Senty Pea)
+    |   |   |   └── C              # Contains target style Skeletonized font images (i.e. Senty Pea)
     |   |   └── test               # Testing
     |   |   |   ├── A              # Contains target style font images (i.e. Senty Pea)
     |   |   |   └── B              # Contains source style font images (i.e. Senty Golden Bell)
     
-### 2. Train!
+### 2. Train
 ```
 python train.py --cuda --dataroot datasets/<dataset_name>/ --input_nc 1 --output_nc 1  --n_epochs 81 --batchSize 5  --decay_epoch 80
 
