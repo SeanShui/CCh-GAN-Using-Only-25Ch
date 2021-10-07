@@ -1,4 +1,4 @@
-# CChGAN-Using-Only-25Ch: Chinese Handwritten Style Transfer Using Only 25 Target Examples
+# CCh-GAN-Using-Only-25Ch: Chinese Handwritten Style Transfer Using Only 25 Target Examples
 
 
 ## Abstract
