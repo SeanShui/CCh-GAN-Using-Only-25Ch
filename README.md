@@ -39,6 +39,36 @@ To compute the FID score between two styles of font images, where images of each
 python -m pytorch_fid path/to/source path/to/target
 ```
 
+## Stage 2 Usage
+### 1. Setup the dataset
+
+You can prepare your own dataset by setting up the following directory structure:
+
+    .
+    ├── datasets                   
+    |   ├── <dataset_name>         # i.e. brucewayne2batman
+    |   |   ├── train              # Training
+    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
+    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    |   |   └── test               # Testing
+    |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
+    |   |   |   └── B              # Contains domain B images (i.e. Batman)
+    
+### 2. Train!
+```
+python train.py --cuda --dataroot datasets/<dataset_name>/ --input_nc 1 --output_nc 1  --n_epochs 81 --batchSize 5  --decay_epoch 80
+
+```
+This command will start a training session using the images under the *dataroot/train* directory with the hyperparameters that showed best results according to CycleGAN authors. You are free to change those hyperparameters, see ```./train --help``` for a description of those.
+
+If you don't own a GPU remove the --cuda option, although I advise you to get one!
+
+## Testing
+```
+python test.py --dataroot datasets/<dataset_name>/ --cuda --input_nc 1 --output_nc 1 --generator_A2B output/79_netG_A2B.pth  --generator_B2A output/79_netG_B2A.pth
+```
+This command will take the images under the *dataroot/test* directory, run them through the generators and save the output under the *output/A* and *output/B* directories. You are free to change those hyperparameters, see ```./test --help``` for a description of those.
+
 ## Acknowledgements
 Stage 1 code derived and rehashed from:
 
