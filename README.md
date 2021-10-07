@@ -1,4 +1,4 @@
-# ChFontGAN25: Chinese Handwritten Style Transfer Using Only 25 Target
+# ChFontGAN25: Chinese Handwritten Style Transfer Using Only 25 Target Examples
 
 
 ## Abstract
