@@ -31,11 +31,11 @@ Stage 2 : Style transfer network of enhanced CycleGAN
 
 ![alt stage2-2](assets/stage2-2.png)
 
-- Transfer from target style to Skeletonized target style
+- Transfer from target style to skeletonized target style
 
 ![alt stage2-3](assets/stage2-3.png)
 
-- Transfer from Skeletonized target style to target style
+- Transfer from skeletonized target style to target style
 
 ![alt stage2-4](assets/stage2-4.png)
 
