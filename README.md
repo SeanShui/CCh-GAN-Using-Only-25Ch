@@ -14,9 +14,30 @@ compared methods.
 
 
 ## Network Structure
-![alt network](assets/Model.png)
 
 We propose a two-stage Chinese font generative system. Stage 1 classify the nearest source style for stage 2 style transfe.
+
+Stage 1 : Style classification network
+
+![alt stage1](assets/stage1.png)
+
+Stage 2 : Style transfer network of enhanced CycleGAN
+
+- Transfer from source style to target style
+
+![alt stage2-1](assets/stage2-1.png)
+
+- Transfer from target style to source style
+
+![alt stage2-2](assets/stage2-2.png)
+
+- Transfer from target style to Skeletonized target style
+
+![alt stage2-3](assets/stage2-3.png)
+
+- Transfer from Skeletonized target style to target style
+
+![alt stage2-4](assets/stage2-4.png)
 
 ## Stage 1 Usage
 
